@@ -1,2 +1,2 @@
 # thalliumfrog.github.io
-Huzunian Revised
+Huzunian Revised Frontend
