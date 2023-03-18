@@ -1,2 +1,5 @@
-<script src="https://raw.githubusercontent.com/3kh0/3kh0.github.io/main/js/games.js">
-</script>
+<iframe
+    width="600"
+    height="400"
+    src="https://thalliumfrog.github.io/games.html">
+</iframe>
