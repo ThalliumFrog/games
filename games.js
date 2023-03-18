@@ -1,3 +1,10 @@
+// Select the elements
+const gamesContainer = document.querySelector('.games');
+const searchBar = document.querySelector('.searchbar');
+const gameContainer = document.querySelector('.gamecontainer');
+const gameFrame = gameContainer.querySelector('.frame');
+const gameNav = gameContainer.querySelector('.nav');
+
 // Fetch the games data from a JSON file
 fetch('https://3kh0.github.io/assets/json/games.json')
   .then((res) => res.json())
