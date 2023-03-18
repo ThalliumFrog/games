@@ -1,5 +1,5 @@
 <iframe
-    width="650"
-    height="450"
+    width="645"
+    height="425"
     src="https://thalliumfrog.github.io/games.html">
 </iframe>
