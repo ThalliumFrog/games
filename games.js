@@ -13,7 +13,7 @@ fetch('https://3kh0.github.io/assets/json/games.json')
     games.forEach((game) => {
       const gameEl = document.createElement('div');
       gameEl.className = 'game';
-      gameEl.innerHTML = `<img src="${"https://3kh0.github.io/" + game.root + "/" + game.img}" onerror="this.src='https://3kh0.github.io/assets/globe.svg'"/><span>${game.name}</span>`;
+      gameEl.innerHTML = `<img src="${"https://raw.githack.com/3kh0/3kh0-assets/main/" + game.root + "/" + game.img}" onerror="this.src='https://3kh0.github.io/assets/globe.svg'"/><span>${game.name}</span>`;
       gamesContainer.appendChild(gameEl);
 
       // Add click event listener to the game element to show the game in the game container
@@ -23,6 +23,6 @@ fetch('https://3kh0.github.io/assets/json/games.json')
         gameContainer.classList.remove('hidden');
         document.querySelector('.saveItems').classList.add('hidden');
         document.querySelector('.navbar').classList.add('noshadow');
-        gameFrame.querySelector('iframe').src = `https://3kh0.github.io/assets/game?game=${game.root}`;
+        gameFrame.querySelector('iframe').src = `https://raw.githack.com/3kh0/3kh0-assets/main/game?game=${game.root}`;
         gameNav.querySelector('span').textContent = game.name;
       };
