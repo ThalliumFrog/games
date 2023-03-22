@@ -46,14 +46,14 @@ searchBar.addEventListener('input', (e) => {
 });
 
 // Fetch the games data from a JSON file
-fetch('./assets/json/games.json')
+fetch('/assets/json/games.json')
   .then((res) => res.json())
   .then((games) => {
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       const gameEl = document.createElement('div');
       gameEl.className = 'game';
-      gameEl.innerHTML = `<img src="${cdn + "/" + game.root + "/" + game.img}" onerror="this.src='./assets/globe.svg'"/><span>${game.name}</span>`;
+      gameEl.innerHTML = `<img src="${"https://3kh0.github.io/3kh0-assets/" + game.root + "/" + game.img}" onerror="this.src='./assets/globe.svg'"/><span>${game.name}</span>`;
       gamesContainer.appendChild(gameEl);
 
       // Add click event listener to the game element to show the game in the game container
