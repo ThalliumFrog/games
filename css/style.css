@@ -254,8 +254,8 @@ footer {
 }
 
 .game {
-  height: 240px;
-  width: 200px;
+  height: 120px;
+  width: 10px;
   background: var(--theme);
   color: var(--text);
   text-decoration: none;
