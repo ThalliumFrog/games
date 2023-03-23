@@ -53,7 +53,7 @@ fetch('./assets/json/games.json')
     games.forEach((game) => {
       const gameEl = document.createElement('div');
       gameEl.className = 'game';
-      gameEl.innerHTML = `<img src="${cdn + "/" + game.root + "/" + game.img}" onerror="this.src='./assets/globe.svg'"/><span>${game.name}</span>`;
+      gameEl.innerHTML = `<img src="this.src='./assets/globe.svg'"/><span>${game.name}</span>`;
       gamesContainer.appendChild(gameEl);
 
       // Add click event listener to the game element to show the game in the game container
