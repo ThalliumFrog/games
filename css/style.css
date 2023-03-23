@@ -247,7 +247,7 @@ footer {
 
 .games {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-columns: repeat(auto-fill, 25px);
   justify-content: space-between;
   grid-gap: 1rem;
   margin: 0.5rem 1rem 1rem 1rem;
